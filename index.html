@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pa Pa Lin (Rose) — Nanny / Babysitter — CV</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f8fafc; --accent-from:#667eea; --accent-to:#764ba2;
+    }
+    html,body{height:100%}
+    body{
+      font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+      background:var(--bg); color:#0f172a;
+    }
+    .gradient-bg{ background: linear-gradient(135deg,var(--accent-from) 0%,var(--accent-to) 100%); }
+    .section-card{ transition: transform .18s ease, box-shadow .18s ease }
+    .section-card:hover{ transform: translateY(-4px); box-shadow: 0 10px 25px rgba(2,6,23,0.08) }
+    .sr-only{ position:absolute!important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0 }
+    .badge { background: rgba(255,255,255,0.08); padding: .25rem .5rem; border-radius: .375rem; font-weight:600; font-size:.8rem; }
+    /* skill bars */
+    .skill-bg { background:#e6eefc; border-radius:9999px; height:10px; }
+    .skill-fill { background: linear-gradient(90deg,var(--accent-from),var(--accent-to)); height:10px; border-radius:9999px; }
+    /* modal */
+    .modal-backdrop { background: rgba(2,6,23,0.6); }
+    @media print {
+      .no-print { display:none !important }
+      body { background: #fff }
+    }
+    /* back-to-top */
+    #topBtn { transition: transform .15s; }
+    #topBtn:hover { transform: translateY(-3px); }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- Header -->
+  <header class="gradient-bg text-white py-10 px-4">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6">
+      <!-- Avatar: using uploaded image -->
+      <div class="flex-shrink-0">
+        <img src="v1.jpg"
+             alt="Pa Pa Lin (Rose) profile photo"
+             class="w-28 h-28 md:w-36 md:h-36 object-cover rounded-full ring-4 ring-white shadow-lg cursor-pointer"
+             id="profilePhoto" />
+      </div>
+
+      <div class="text-center md:text-left">
+        <h1 class="text-2xl md:text-3xl font-bold leading-tight">Pa Pa Lin <span class="text-sky-100 font-medium">“Rose”</span></h1>
+        <p class="mt-1 text-sm md:text-base opacity-90">Professional Nanny &amp; Childcare Specialist — Phuket, Thailand</p>
+        <div class="mt-3 flex flex-wrap gap-3 items-center justify-center md:justify-start">
+          <span class="badge">Nanny & Babysitter</span>
+          <span class="badge">Newborn & Toddler Care</span>
+          <span class="badge">Travel-Friendly</span>
+        </div>
+
+        <div class="mt-3 text-sm opacity-95 flex flex-wrap gap-4 items-center md:items-start">
+          <div class="flex items-center gap-2"><span aria-hidden="true">📍</span><span>Phuket, Thailand</span></div>
+          <div class="flex items-center gap-2"><span aria-hidden="true">📱</span><a href="tel:+66805811425" class="hover:underline">+66 8058 11425</a></div>
+          <div class="flex items-center gap-2"><span aria-hidden="true">✉️</span><a href="mailto:papalinza1980@gmail.com" class="hover:underline">papalinza1980@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="max-w-4xl mx-auto px-4 py-8">
+
+    <!-- About -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6 section-card" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="text-2xl font-semibold mb-3 flex items-center gap-2"><span aria-hidden="true">👋</span> About Me</h2>
+      <p class="text-slate-700 leading-relaxed">
+        Hello — my name is Pa Pa Lin (Rose). I am originally from Myanmar and have lived in Phuket for about 15 years. I began
+        working as a nanny in 2017 and over the years I have cared for many families — both full-time placements and part-time
+        babysitting roles. I am comfortable with newborns (bottle & breast support routines), infants and toddlers. I create calm,
+        consistent routines for sleep and feeding, and I focus on safety, gentle encouragement, and play-based learning.
+      </p>
+
+      <p class="mt-3 text-slate-700 leading-relaxed">
+        In addition to direct childcare (feeding, bathing, nap routines), I prepare simple nutritious meals for young children,
+        keep play areas and childrens' laundry tidy, and support early development with songs, reading and guided play. I enjoy
+        traveling with families and have experience caring for children on holiday trips (short stays and multi-week travel).
+        Communication with parents and following household rules are priorities — I’m reliable, flexible and always respectful of
+        family preferences.
+      </p>
+    </section>
+
+    <!-- Contact & Quick Info -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <div class="bg-white rounded-lg shadow-md p-6 section-card">
+        <h3 class="text-lg font-semibold mb-3">Contact</h3>
+        <div class="text-sm space-y-2 text-slate-700">
+          <div><strong>Phone:</strong> <a href="tel:+66805811425" class="text-sky-600">+66 8058 11425</a></div>
+          <div><strong>Email:</strong> <a href="mailto:papalinza1980@gmail.com" class="text-sky-600">papalinza1980@gmail.com</a></div>
+          <div><strong>Address:</strong> 63/61 Soi Sayun1, Rawai, Phuket, Thailand</div>
+          <div><strong>Languages:</strong> Myanmar (native), English (conversational), Thai (conversational)</div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md p-6 section-card">
+        <h3 class="text-lg font-semibold mb-3">Skills Snapshot</h3>
+        <div class="space-y-3">
+          <div>
+            <div class="flex justify-between text-sm"><span>Newborn care</span><span>95%</span></div>
+            <div class="skill-bg mt-2"><div class="skill-fill" style="width:95%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm"><span>Toddler activities</span><span>90%</span></div>
+            <div class="skill-bg mt-2"><div class="skill-fill" style="width:90%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm"><span>Meal prep (children)</span><span>80%</span></div>
+            <div class="skill-bg mt-2"><div class="skill-fill" style="width:80%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm"><span>Light housekeeping</span><span>85%</span></div>
+            <div class="skill-bg mt-2"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6 section-card" aria-labelledby="exp-heading">
+      <h2 id="exp-heading" class="text-2xl font-semibold mb-4 flex items-center gap-2"><span aria-hidden="true">💼</span> Work Experience</h2>
+
+      <div class="space-y-6 text-slate-700">
+        <!-- Nanny -->
+        <div class="border-l-4 border-purple-500 pl-4">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="font-bold text-lg">Professional Nanny — Private Families (Phuket)</h3>
+              <div class="text-sm text-slate-500">2017 — Present</div>
+            </div>
+            <div class="text-sm text-slate-500">Full-time & part-time placements</div>
+          </div>
+
+          <ul class="list-disc list-inside mt-3 space-y-1">
+            <li>Complete newborn care (feeding schedules, burping, nappy changes, bathing, gentle sleep routines).</li>
+            <li>Routine and structure for toddlers — naps, mealtimes, enrichment play, potty practice.</li>
+            <li>Prepare simple nutritious meals and snacks tailored for children; follow dietary restrictions and weaning plans.</li>
+            <li>Travel nanny experience: accompanied families on domestic trips and island stays, managing children’s routines away from home.</li>
+            <li>Record-keeping for feeding and sleep when required; excellent communication with parents about progress and concerns.</li>
+          </ul>
+        </div>
+
+        <!-- Receptionist -->
+        <div class="border-l-4 border-purple-500 pl-4">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="font-bold text-lg">Receptionist — OYO / PhuNaNa Boutique Hotel</h3>
+              <div class="text-sm text-slate-500">(approx. 4 years combined experience)</div>
+            </div>
+            <div class="text-sm text-slate-500">Guest service & admin</div>
+          </div>
+
+          <ul class="list-disc list-inside mt-3 space-y-1">
+            <li>Front desk responsibilities, guest check-in/out, phone & WhatsApp communication with guests.</li>
+            <li>Booking coordination, light administration and coordination with housekeeping and kitchen.</li>
+            <li>Customer service, problem-solving and helping international guests with local information.</li>
+          </ul>
+        </div>
+
+        <!-- Waitress -->
+        <div class="border-l-4 border-purple-500 pl-4">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="font-bold text-lg">Restaurant Waitress — Phuket Trunk & local restaurants</h3>
+              <div class="text-sm text-slate-500">Service & hospitality</div>
+            </div>
+            <div class="text-sm text-slate-500">Various periods</div>
+          </div>
+
+          <ul class="list-disc list-inside mt-3 space-y-1">
+            <li>Customer service, table service, basic POS handling, coordinating with kitchen staff.</li>
+            <li>Punctual, friendly service that improved guest satisfaction and repeat customers.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- References with photos if available -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-6 section-card" aria-labelledby="refs-heading">
+      <h2 id="refs-heading" class="text-2xl font-semibold mb-4 flex items-center gap-2"><span aria-hidden="true">⭐</span> References</h2>
+
+      <div class="space-y-4">
+        <!-- Reference 1 -->
+        <div class="flex gap-4 items-start bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+          <img src="4ed93129-78b8-499f-bd88-f3bf33e8fa0e.jpg" alt="Reference - Yevheniia Nyzhnyk" class="w-20 h-20 object-cover rounded-md flex-shrink-0 cursor-pointer" onclick="openModal(this.src, 'Yevheniia Nyzhnyk')" />
+          <div>
+            <div class="flex items-center justify-between gap-4">
+              <h3 class="font-bold">Yevheniia Nyzhnyk — Ukraine</h3>
+              <div class="text-sm text-slate-600">WhatsApp: <a href="https://wa.me/66957902142" target="_blank" rel="noopener noreferrer" class="text-sky-600">+66 9579 02142</a></div>
+            </div>
+            <p class="text-slate-700 italic mt-2">“Rose worked with our family for 9 months, starting when my baby was 25 days old. She showed exceptional care, patience, and responsibility. Rose is gentle, trustworthy, and very experienced with infants.”</p>
+          </div>
+        </div>
+
+        <!-- Reference 2 -->
+        <div class="flex gap-4 items-start bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+          <img src="7c74772f-0792-40b9-ba6a-52f6719847ba.jpg" alt="Reference - Lior Haraldson" class="w-20 h-20 object-cover rounded-md flex-shrink-0 cursor-pointer" onclick="openModal(this.src, 'Lior Haraldson')" />
+          <div>
+            <div class="flex items-center justify-between gap-4">
+              <h3 class="font-bold">Lior Haraldson — Israel</h3>
+              <div class="text-sm text-slate-600">WhatsApp: <a href="tel:+972542478278" class="text-sky-600">+972 54-247-8278</a></div>
+            </div>
+            <p class="text-slate-700 italic mt-2">“Rose cared for our son Eitan from 6 months old for 4 months on a daily basis. She was incredibly dedicated, loving and attentive. We trusted her completely and highly recommend her.”</p>
+          </div>
+        </div>
+
+        <!-- Reference 3 -->
+        <div class="flex gap-4 items-start bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+          <img src="781b3c28-9167-45f4-9abe-aa9acbcba1c1.jpg" alt="Reference - Jonathan & Jessica" class="w-20 h-20 object-cover rounded-md flex-shrink-0 cursor-pointer" onclick="openModal(this.src, 'Jonathan & Jessica')" />
+          <div>
+            <div class="flex items-center justify-between gap-4">
+              <h3 class="font-bold">Jonathan &amp; Jessica — Australia</h3>
+              <div class="text-sm text-slate-600">WhatsApp: <a href="https://wa.me/61417621146" target="_blank" rel="noopener noreferrer" class="text-sky-600">+61 417 621 146</a></div>
+            </div>
+            <p class="text-slate-700 italic mt-2">“Rose looked after our three children for five months. She had a natural connection with our children and confidently looked after multiple children at once. We will use her again.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extras and CTA -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <div class="bg-white rounded-lg shadow-md p-6 section-card">
+        <h3 class="text-lg font-semibold mb-3">Personal Qualities</h3>
+        <div class="grid grid-cols-3 gap-3 text-center">
+          <div class="p-3 bg-purple-50 rounded-lg"><div class="text-xl mb-1">❤️</div><div class="font-semibold">Loving</div></div>
+          <div class="p-3 bg-purple-50 rounded-lg"><div class="text-xl mb-1">🤝</div><div class="font-semibold">Trustworthy</div></div>
+          <div class="p-3 bg-purple-50 rounded-lg"><div class="text-xl mb-1">⏰</div><div class="font-semibold">Punctual</div></div>
+          <div class="p-3 bg-purple-50 rounded-lg"><div class="text-xl mb-1">🎯</div><div class="font-semibold">Dedicated</div></div>
+          <div class="p-3 bg-purple-50 rounded-lg"><div class="text-xl mb-1">🌟</div><div class="font-semibold">Reliable</div></div>
+          <div class="p-3 bg-purple-50 rounded-lg"><div class="text-xl mb-1">📚</div><div class="font-semibold">Quick Learner</div></div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md p-6 section-card">
+        <h3 class="text-lg font-semibold mb-3">Availability & Notes</h3>
+        <p class="text-slate-700 mb-3">Available for full-time, part-time, and travel nanny positions. Expected salary: negotiable — happy to discuss based on duties and hours.</p>
+        <div class="text-sm">
+          <strong>Travel:</strong> Comfortable traveling with families — domestic & island trips.<br/>
+          <strong>Transport:</strong> Can ride motorcycles when required.<br/>
+          <strong>Extras:</strong> Basic first-aid knowledge (please request certificate if needed), able to follow daily routines and medical instructions.
+        </div>
+      </div>
+    </section>
+
+    <!-- Actions: print/download -->
+    <div class="flex flex-col sm:flex-row gap-3 items-center justify-between mb-8 no-print">
+      <div class="text-sm text-slate-700">Want a copy? Print or save as PDF using the button — or download HTML.</div>
+      <div class="flex gap-3">
+        <button onclick="window.print()" class="px-4 py-2 bg-sky-600 text-white rounded-md font-semibold shadow hover:opacity-95">Download Resume (PDF)</button>
+        <a id="downloadHtml" class="px-4 py-2 bg-white border border-slate-200 rounded-md text-slate-800 font-semibold hover:bg-slate-50 cursor-pointer">Download HTML</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 rounded-md px-6">
+      <div class="max-w-4xl mx-auto text-center text-sm">
+        <div>© <span id="year"></span> Pa Pa Lin (Rose) — Professional Nanny</div>
+        <div class="text-xs opacity-80 mt-1">Available in Phuket, Thailand • 11+ years experience</div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Back to top -->
+  <button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed right-4 bottom-4 bg-sky-600 text-white p-3 rounded-full shadow-lg no-print" title="Back to top">↑</button>
+
+  <!-- Image modal -->
+  <div id="imgModal" class="fixed inset-0 hidden items-center justify-center z-50">
+    <div class="modal-backdrop absolute inset-0" onclick="closeModal()"></div>
+    <div class="relative z-10 max-w-3xl mx-4">
+      <img id="modalImg" src="" alt="" class="w-full max-h-[80vh] object-contain rounded-md shadow-lg" />
+      <div class="mt-2 text-white text-center" id="modalCaption"></div>
+      <button onclick="closeModal()" class="absolute top-2 right-2 bg-white/90 rounded-full p-2">✕</button>
+    </div>
+  </div>
+
+  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Modal functions for viewing photos
+    function openModal(src, caption){
+      document.getElementById('modalImg').src = src;
+      document.getElementById('modalCaption').textContent = caption || '';
+      document.getElementById('imgModal').classList.remove('hidden');
+      document.getElementById('imgModal').classList.add('flex');
+    }
+    function closeModal(){
+      document.getElementById('imgModal').classList.add('hidden');
+      document.getElementById('imgModal').classList.remove('flex');
+      document.getElementById('modalImg').src = '';
+    }
+
+    // Download HTML: create blob and trigger download
+    document.getElementById('downloadHtml').addEventListener('click', function(){
+      const docHtml = '<!doctype html>\\n' + document.documentElement.outerHTML;
+      const blob = new Blob([docHtml], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'PaPaLin_Rose_resume.html';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    });
+
+    // Accessibility: close modal on ESC
+    window.addEventListener('keydown', function(e){
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+
+</body>
+</html>
